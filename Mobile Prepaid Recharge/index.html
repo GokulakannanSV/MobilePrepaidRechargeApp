@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="background-color: #CEE6F2;">
     <header>
 
-        <!---->
-        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ede8f5;">
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">Logo</a>
@@ -33,13 +33,13 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Explore Offers</a>
+                            <a class="nav-link" href="#instant-recharge">Instant Recharge</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Instant Recharge</a>
+                            <a class="nav-link" href="#explore-offers">Explore Offers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Prepaid Plans</a>
+                            <a class="nav-link" href="#prepaid-plans">Prepaid Plans</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Profile</a>
@@ -55,19 +55,20 @@
     <main>
 
         <section>
-            <div class="container-fluid" id="instant-recharge" style="background-color: #31473a;">
+            <div class="container-fluid" id="instant-recharge" style="background-color:#adbbda;">
                 <div class="row p-5">
-                    <div class="col-lg-6 text-white">
+                    <div class="col-lg-6 text-dark">
                         <p class="display-2 mt-lg-5">Explore plans with unlimited voice calls, data, SMS, and a host of
                             benefits.</p>
                     </div>
-                    <div class="col-lg-6 mt-sm-4 p-5 rounded-5 mt-lg-5 text-primary" style="background-color: #edf4f2;">
+                    <div class="col-lg-6 mt-sm-4 p-5 rounded-5 mt-lg-5 text-primary" style="background-color: #8697c4;">
                         <h1 class="text-center display-2 text-dark">Recharge Now</h1>
                         <h1 class="h3 mt-4 text-dark text-center">Mobile Number</h1>
                         <input type="text" class="form-control mx-auto mt-4 w-75 p-lg-3"
                             placeholder="+91  Enter Mobile-Number">
                         <div class="text-center">
-                            <button type="button" class="btn btn-primary p-2 mt-4 text-center">Recharge Now</button>
+                            <button type="button" class="btn  p-2 mt-4 text-center"
+                                style="background-color: #3d52a0;color: white;">Recharge Now</button>
                         </div>
                     </div>
                     <div class="col-lg-12 text-center mt-5 text-light w-100 display-2">
@@ -80,7 +81,7 @@
 
         <!--Carousel-->
 
-        <section>
+        <section id="explore-offers">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -136,7 +137,7 @@
         </section>
 
 
-        <section>
+        <section id="prepaid-plans">
             <div class="container mt-4">
                 <div class="row">
                     <button class="btn btn-primary d-md-none mb-2" type="button" data-bs-toggle="collapse"
@@ -191,12 +192,18 @@
                                                     <div class="col-md-4">
                                                         <div class="card mt-lg-2  mt-md-4 mb-sm-5">
                                                             <div class="card-body">
-                                                                <h5 class="card-title d-inline">Plan A</h5>
+                                                                <h5 class="card-title d-inline">₹499</h5>
                                                                 <button class="btn text-danger float-end"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#planModal">Know more</button>
-                                                                <p class="card-text">Basic plan details.</p>
-                                                                <button class="btn btn-success">Recharge</button>
+                                                                <p class="card-text"><strong>Validity:</strong> 30 days
+                                                                </p>
+                                                                <p class="card-text"><strong>Data:</strong> 2GB/day</p>
+                                                                <p class="card-text"><strong>OTT Benefits:</strong>
+                                                                    Netflix Mobile</p>
+                                                                <button class="btn btn-primary text-center"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#getplanModal">Get Plan</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -611,8 +618,7 @@
                             </div>
 
                             <!--Premium Plans-->
-                            <div class="tab-pane fade" id="premium" role="tabpanel"
-                                aria-labelledby="premium-tab">
+                            <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab">
                                 <h1 class="h3">Premium Plans</h1>
                                 <!--Card Alignment-->
                                 <div class="row">
@@ -737,8 +743,7 @@
                             </div>
 
                             <!--BusinessPlans-->
-                            <div class="tab-pane fade" id="business" role="tabpanel"
-                                aria-labelledby="business-tab">
+                            <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
                                 <h1 class="h3">Business Plans</h1>
                                 <!--Card Alignment-->
                                 <div class="row">
@@ -863,8 +868,7 @@
                             </div>
 
 
-                            <div class="tab-pane fade" id="enterprise" role="tabpanel"
-                                aria-labelledby="enterprise-tab">
+                            <div class="tab-pane fade" id="enterprise" role="tabpanel" aria-labelledby="enterprise-tab">
                                 <h1 class="h3">Enterprise Plans</h1>
                                 <!--Card Alignment-->
                                 <div class="row">
@@ -992,26 +996,258 @@
                     </div>
                 </div>
 
-                <!-- Modal -->
+                <!--Know Modal -->
                 <div class="modal fade" id="planModal" tabindex="-1" aria-labelledby="planModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="planModalLabel">Plan Details</h5>
+                                <h5 class="modal-title" id="planModalLabel">Plan Description</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Detailed description of the selected plan.
+                                <p><strong>Price:</strong> $25</p>
+                                <p><strong>OTT's included:</strong> Netflix, Amazon Prime, Disney+</p>
+                                <p><strong>Pack Validity:</strong> 30 Days</p>
+                                <p><strong>Total Data:</strong> 100GB</p>
+                                <p><strong>Data at High Speed:</strong> 2GB/day</p>
+                                <p><strong>Voice:</strong> Unlimited Calls</p>
+                                <p><strong>SMS:</strong> 100/day</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#getplanModal">Get Plan</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--GetPlan Modal -->
+                <div class="modal fade" id="getplanModal" tabindex="-1" aria-labelledby="paymentModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="paymentModalLabel">Enter your MobiComm Number</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <input type="text" class="form-control mb-3" placeholder="Enter Mobile Number">
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#paymentModal">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Payment Modal -->
+                <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="paymentModalLabel">Payment</h5>
+                                <button type="button" class="btn-close float-end" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Total Amount Payable:</strong> $25</p>
+
+                                <p><strong>UPI:</strong></p>
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="gpay"
+                                            value="Google Pay">
+                                        <label class="form-check-label" for="gpay">Google Pay</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="phonepe"
+                                            value="PhonePe">
+                                        <label class="form-check-label" for="phonepe">PhonePe</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="paytm"
+                                            value="Paytm">
+                                        <label class="form-check-label" for="paytm">Paytm</label>
+                                    </div>
+                                </div>
+
+                                <p><strong>Card:</strong></p>
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="visa"
+                                            value="Visa">
+                                        <label class="form-check-label" for="visa">DebitCard</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod"
+                                            id="mastercard" value="MasterCard">
+                                        <label class="form-check-label" for="mastercard">CreditCard</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-success">Make Payment</button>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                    aria-label="Close">Cancel Payment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </section>
+
+        <!--Testimonials-->
+        <section>
+            <h1 class="h3 text-center mt-5">Testimonials</h1>
+            <div class="container mt-4">
+                <div class="row mx-5">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-header">Featured</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">2 days ago</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-header">Featured</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">2 days ago</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-header">Featured</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">2 days ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--Testimonials-->
+
+        <!--FAQ's-->
+        <section>
+
+            <div class="container mt-5">
+                <h1 class="h3 text-center mt-5">Frequently Asked Questions</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FAQ's-->
+
+        <!--Contact Us-->
+        <section>
+            <div class="container-fluid" id="contact-us" style="background-color:#adbbda;">
+                <div class="row p-5">
+                    <div class="col-lg-6 text-dark">
+                        <p class="display-2 mt-lg-5">Have A Query Feel Free To Contact Us.</p>
+                    </div>
+                    <div class="col-lg-6 mt-sm-4 p-5 rounded-5 mt-lg-5 text-primary" style="background-color: #8697c4;">
+                        <h1 class="text-center display-2 text-dark">Contact Us</h1>
+                        <h1 class="h3 mt-4 text-dark mx-5">Email</h1>
+                        <input type="text" class="form-control mx-5 mt-4 w-75 p-lg-3" placeholder="Enter Email">
+                        <h1 class="h3 mt-4 text-dark mx-5">Your Query</h1>
+                        <input type="text" class="form-control mx-5 mt-4 w-75 p-lg-3" placeholder="Enter Your Query">
+                        <div class="text-center">
+                            <button type="button" class="btn  p-2 mt-4 text-center"
+                                style="background-color: #3d52a0;color: white;">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
     </main>
+
+    <footer>
+        <div class="container-fluid" id="footer">
+            <p class="text-center">CopyRights @Mobicomm 2025</p>
+
+        </div>
+    </footer>
 </body>
 
 </html>
