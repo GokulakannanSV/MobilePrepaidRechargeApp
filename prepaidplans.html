@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg bg-warning ">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html"><i>MobiComm</i></a>
+
+                <!-- Toggle button for responsive collapse -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="index.html">Instant Recharge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="index.html">Explore Offers</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-primary" href="prepaidplans.html">Prepaid Plans</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section id="prepaid-plans">
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Vertical Navigation -->
+                <div class="col-md-3">
+                    <button class="btn d-md-none mt-sm-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#planNav">
+                        Explore Categories
+                    </button>
+
+                    <div class="collapse d-md-block mt-5" id="planNav">
+                        <h4 class="mb-3 secondary">Plan Categories</h4>
+                        <div class="nav flex-column nav-pills" id="planTabs" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link toggle active" id="basic-tab" data-bs-toggle="pill"
+                                data-bs-target="#basic" type="button" role="tab">Recommended Plans</button>
+                            <button class="nav-link toggle " id="standard-tab" data-bs-toggle="pill"
+                                data-bs-target="#standard" type="button" role="tab">Entertainment Bonanza</button>
+                            <button class="nav-link toggle" id="premium-tab" data-bs-toggle="pill"
+                                data-bs-target="#premium" type="button" role="tab">XLR8 Data Plans</button>
+                            <button class="nav-link toggle" id="business-tab" data-bs-toggle="pill"
+                                data-bs-target="#business" type="button" role="tab">Pocket Friendly</button>
+                            <button class="nav-link toggle" id="enterprise-tab" data-bs-toggle="pill"
+                                data-bs-target="#enterprise" type="button" role="tab">DataPowerUp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content with Accordions and Cards -->
+
+                <!--Plans Alignment-->
+                <div class="col-md-9 mt-5">
+                    <!--Tab Content Property-->
+                    <div class="tab-content" id="planTabsContent">
+
+                        <!--Basic Plans-->
+                        <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+                            <h1 class="h3 secondary">Recommended Plans – "Top Picks, Just for You!"</h1>
+
+
+                            <!--Accordion Begin-->
+                            <div class="accordion" id="basicAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#basicPlan1">
+                                            Mobicomm Recommended Plans
+                                        </button>
+                                    </h2>
+                                    <div id="basicPlan1" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <!--Card Alignment-->
+                                            <div class="row">
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                BestSeller</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹499</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 30 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                2GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Netflix Mobile</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                PowerPlay</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹799</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 30 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                3GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Netflix & Prime video</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                XtremeNet</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹499</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 30 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                6GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Prime video</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                All-Rounder</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹599</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 56 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                2.5GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Netflix & Prime video</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+
+
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                MaxSaver</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹699</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 84 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                2GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Disney+ Hotstar</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+
+                                            </div>
+                                            <!--Card Alignment End-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Accordion End-->
+
+
+                            <!--Accordion Begin-->
+                            <div class="accordion" id="basicAccordion1" aria-labelledby="basic-tab">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#basicPlan2">
+                                            Most Used Plans
+                                        </button>
+                                    </h2>
+                                    <div id="basicPlan2" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <!--Card Alignment-->
+                                            <div class="row">
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                StreamFlex</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹799</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 30 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                3GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Disney+ Hotstar & Netflix</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                InfinityGo</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹899</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 45 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                8GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Disney+ Hotstar & Prime</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                SupremePlan</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹999</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 90 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                5GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Disney+ Hotstar & jio-cinema</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                EliteConnect</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹1199</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 120 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                15GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Disney+ Hotstar & prime video</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                UltimatePack</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹1499</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 180 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                10GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Disney+ Hotstar , netflix & spotify Premium</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+
+                                            </div>
+                                            <!--Card Alignment End-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Accordion End-->
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="standard" role="tabpanel" aria-labelledby="standard-tab">
+                            <h1 class="h3 secondary">Entertainment & OTT Plans – "Unlimited Fun, Anytime, Anywhere!"
+                            </h1>
+                            <!--Accordion Begin-->
+                            <div class="accordion" id="standardAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#standardPlan1">
+                                            MobiComm Entertaiment Plans for Movie Buffs
+                                        </button>
+                                    </h2>
+                                    <div id="standardPlan1" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <!--Card Alignment-->
+                                            <div class="row">
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                BingeMax</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹299</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 28 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                2GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Disney+ Hotstar</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                StreamElite</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹399</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 30 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                3GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Prime Video</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">PlayOn
+                                                            </h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹1499</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 30 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                2GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Sony Liv Premium</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                ReelRush</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹599</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 56 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                2.5GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Netflix</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                PrimeView</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹699</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 84 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                2GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Prime Video & Zee5</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                UltraBinge</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹799</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 30 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                3GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Netflix & Prime</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                CineBuff</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹899</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 45 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                8GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Netflix Premium</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+
+                                            </div>
+                                            <!--Card Alignment End-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Accordion End-->
+
+
+                            <!--Accordion Begin-->
+                            <div class="accordion" id="standardAccordion1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#standardPlan2">
+                                            Gamers Don't Die They Respawn
+                                        </button>
+                                    </h2>
+                                    <div id="standardPlan2" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <!--Card Alignment-->
+                                            <div class="row">
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                Gamer's Boost </h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹499</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 30 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                4GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                X-box GamePass</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                Ultimate Gamer </h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹999</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 90 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                5GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Playstation plus</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                Pro Gamer</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹799</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 60 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                3GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                x-box GamePass</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                Veteran Gamer</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹699</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 30 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                6GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Twitch Premium</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                Gamer's Arena</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹1199</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 90 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                8GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Prime Gaming</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+                                                <!--Card Start-->
+                                                <div class="col-md-4">
+                                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title d-inline plan-title secondary">
+                                                                E-Sports Pro</h5>
+                                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                                data-bs-target="#planModal"
+                                                                onclick="showPlanDetails(this)">Know more</button>
+                                                            <p class="card-text plan-price"><strong>₹1499</strong></p>
+                                                            <p class="card-text plan-validity">
+                                                                <strong>Validity:</strong> 180 days
+                                                            </p>
+                                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                                10GB/day</p>
+                                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                                Epic Games</p>
+                                                            <button class="btn btn-success text-center"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#getplanModal">Get Plan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Card End-->
+
+                                            </div>
+                                            <!--Card Alignment End-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Accordion End-->
+                        </div>
+
+                        <!--Premium Plans-->
+                        <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab">
+                            <h1 class="h3 secondary">Xccelerate Data Plans – "Speed Beyond Limits!" </h1>
+                            <!--Card Alignment-->
+                            <div class="row">
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                WarpSpeed</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal" onclick="showPlanDetails(this)">Know
+                                                more</button>
+                                            <p class="card-text plan-price"><strong>₹299</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 28 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                2GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center" data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                Hyper-Connect</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal" onclick="showPlanDetails(this)">Know
+                                                more</button>
+                                            <p class="card-text plan-price"><strong>₹399</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 30 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                3GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center" data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                BlazeStream</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal" onclick="showPlanDetails(this)">Know
+                                                more</button>
+                                            <p class="card-text plan-price"><strong>₹499</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 30 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                10GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                            None</p>
+                                            <button class="btn btn-success text-center" data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                Nitro Speed</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹599</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 56 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                2.5GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                Warp-Connect</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹699</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 84 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                1.5GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                               <!--Card Start-->
+                               <div class="col-md-4">
+                                <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-inline plan-title secondary">
+                                            UltraSurge</h5>
+                                        <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                            data-bs-target="#planModal"
+                                            onclick="showPlanDetails(this)">Know more</button>
+                                        <p class="card-text plan-price"><strong>₹799</strong></p>
+                                        <p class="card-text plan-validity">
+                                            <strong>Validity:</strong> 30 days
+                                        </p>
+                                        <p class="card-text plan-data"><strong>Data:</strong>
+                                            3GB/day</p>
+                                        <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                            Netflix</p>
+                                        <button class="btn btn-success text-center"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#getplanModal">Get Plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Card End-->
+                               <!--Card Start-->
+                               <div class="col-md-4">
+                                <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-inline plan-title secondary">
+                                            MaxFlow</h5>
+                                        <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                            data-bs-target="#planModal"
+                                            onclick="showPlanDetails(this)">Know more</button>
+                                        <p class="card-text plan-price"><strong>₹899</strong></p>
+                                        <p class="card-text plan-validity">
+                                            <strong>Validity:</strong> 45 days
+                                        </p>
+                                        <p class="card-text plan-data"><strong>Data:</strong>
+                                            10GB/day</p>
+                                        <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                            None</p>
+                                        <button class="btn btn-success text-center"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#getplanModal">Get Plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Card End-->
+                               <!--Card Start-->
+                               <div class="col-md-4">
+                                <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-inline plan-title secondary">
+                                            PowerStream</h5>
+                                        <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                            data-bs-target="#planModal"
+                                            onclick="showPlanDetails(this)">Know more</button>
+                                        <p class="card-text plan-price"><strong>₹999</strong></p>
+                                        <p class="card-text plan-validity">
+                                            <strong>Validity:</strong> 90 days
+                                        </p>
+                                        <p class="card-text plan-data"><strong>Data:</strong>
+                                            5GB/day</p>
+                                        <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                            None</p>
+                                        <button class="btn btn-success text-center"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#getplanModal">Get Plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Card End-->
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                InfinitySpeed</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹1199</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 120 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                15GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                Prime Video</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                            </div>
+                        </div>
+
+                        <!--BusinessPlans-->
+                        <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
+                            <h1 class="h3 secondary">Pocket Friendly Plans – "Save More, Get More!"</h1>
+                            <!--Card Alignment-->
+                            <div class="row">
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                SaverPlan</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹99</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 14 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                1GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                 <!--Card Start-->
+                                 <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                ValueBoost</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹149</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 28 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                1.5GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                 <!--Card Start-->
+                                 <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                SmartSaver</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹199</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 28 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                2GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                 <!--Card Start-->
+                                 <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                LitePlan</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹249</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 35 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                1.5GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                 <!--Card Start-->
+                                 <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                EconomyPack</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹299</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 40 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                2GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                BudgetX</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹349</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 50 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                2GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                 <!--Card Start-->
+                                 <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                SimpleNet</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹399</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 56 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                1.5GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                 <!--Card Start-->
+                                 <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                MoneySaver</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹449</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 60 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                2GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                 <!--Card Start-->
+                                 <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                SmartChice</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹499</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 75 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                2GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                 <!--Card Start-->
+                                 <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                Essential</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹549</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 549 days
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                1.5GB/day</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="enterprise" role="tabpanel" aria-labelledby="enterprise-tab">
+                            <h1 class="h3 secondary">Data Power-Up – "Boost Your Data, Anytime!"</h1>
+                            <!--Card Alignment-->
+                            <div class="row">
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                InstaBoost</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹19</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 1 day
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                1GB</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                               <!--Card Start-->
+                               <div class="col-md-4">
+                                <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-inline plan-title secondary">
+                                            SpeedShot</h5>
+                                        <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                            data-bs-target="#planModal"
+                                            onclick="showPlanDetails(this)">Know more</button>
+                                        <p class="card-text plan-price"><strong>₹29</strong></p>
+                                        <p class="card-text plan-validity">
+                                            <strong>Validity:</strong> 2 day
+                                        </p>
+                                        <p class="card-text plan-data"><strong>Data:</strong>
+                                            2GB</p>
+                                        <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                            None</p>
+                                        <button class="btn btn-success text-center"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#getplanModal">Get Plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Card End-->
+                               <!--Card Start-->
+                               <div class="col-md-4">
+                                <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-inline plan-title secondary">
+                                            DataRush</h5>
+                                        <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                            data-bs-target="#planModal"
+                                            onclick="showPlanDetails(this)">Know more</button>
+                                        <p class="card-text plan-price"><strong>₹49</strong></p>
+                                        <p class="card-text plan-validity">
+                                            <strong>Validity:</strong> 3 day
+                                        </p>
+                                        <p class="card-text plan-data"><strong>Data:</strong>
+                                            3GB</p>
+                                        <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                            None</p>
+                                        <button class="btn btn-success text-center"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#getplanModal">Get Plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Card End-->
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                Turbo-Topup</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹79</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 7 day
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                5GB</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                ExpressBoost</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹99</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 7 day
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                7GB</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                               <!--Card Start-->
+                               <div class="col-md-4">
+                                <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-inline plan-title secondary">
+                                            HyperSurge</h5>
+                                        <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                            data-bs-target="#planModal"
+                                            onclick="showPlanDetails(this)">Know more</button>
+                                        <p class="card-text plan-price"><strong>₹129</strong></p>
+                                        <p class="card-text plan-validity">
+                                            <strong>Validity:</strong> 14 day
+                                        </p>
+                                        <p class="card-text plan-data"><strong>Data:</strong>
+                                            10GB</p>
+                                        <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                            None</p>
+                                        <button class="btn btn-success text-center"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#getplanModal">Get Plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Card End-->
+                                <!--Card Start-->
+                                <div class="col-md-4">
+                                    <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title d-inline plan-title secondary">
+                                                FlashSpeed</h5>
+                                            <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                                data-bs-target="#planModal"
+                                                onclick="showPlanDetails(this)">Know more</button>
+                                            <p class="card-text plan-price"><strong>₹149</strong></p>
+                                            <p class="card-text plan-validity">
+                                                <strong>Validity:</strong> 15 day
+                                            </p>
+                                            <p class="card-text plan-data"><strong>Data:</strong>
+                                                15GB</p>
+                                            <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                                None</p>
+                                            <button class="btn btn-success text-center"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#getplanModal">Get Plan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card End-->
+                              <!--Card Start-->
+                              <div class="col-md-4">
+                                <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-inline plan-title secondary">
+                                            InfinityBurst</h5>
+                                        <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                            data-bs-target="#planModal"
+                                            onclick="showPlanDetails(this)">Know more</button>
+                                        <p class="card-text plan-price"><strong>₹249</strong></p>
+                                        <p class="card-text plan-validity">
+                                            <strong>Validity:</strong> 30 day
+                                        </p>
+                                        <p class="card-text plan-data"><strong>Data:</strong>
+                                            30GB</p>
+                                        <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                            None</p>
+                                        <button class="btn btn-success text-center"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#getplanModal">Get Plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Card End-->
+                               <!--Card Start-->
+                               <div class="col-md-4">
+                                <div class="card mt-lg-2  mt-md-4 mb-sm-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-inline plan-title secondary">
+                                            UltimateData</h5>
+                                        <button class="btn btn-pri float-end" data-bs-toggle="modal"
+                                            data-bs-target="#planModal"
+                                            onclick="showPlanDetails(this)">Know more</button>
+                                        <p class="card-text plan-price"><strong>₹299</strong></p>
+                                        <p class="card-text plan-validity">
+                                            <strong>Validity:</strong> 45 day
+                                        </p>
+                                        <p class="card-text plan-data"><strong>Data:</strong>
+                                            50GB</p>
+                                        <p class="card-text plan-ott"><strong>OTT Benefits:</strong>
+                                            None</p>
+                                        <button class="btn btn-success text-center"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#getplanModal">Get Plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Card End-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Know Modal -->
+            <div class="modal fade" id="planModal" tabindex="-1" aria-labelledby="planModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="planModalLabel">Plan Description</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Name Of The Plan:</strong> <span id="modalTitle"></span></p>
+                            <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+                            <p><strong>OTT's included:</strong> <span id="modalOTTs"></span></p>
+                            <p><strong>Pack Validity:</strong> <span id="modalValidity"></span></p>
+                            <p><strong>Total Data:</strong> <span id="modalTotalData"></span></p>
+                            <p><strong>Data at High Speed:</strong> <span id="modalHighSpeedData"></span></p>
+                            <p><strong>Voice:</strong> <span id="modalVoice"></span></p>
+                            <p><strong>SMS:</strong> <span id="modalSMS"></span></p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#getplanModal">Get Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--GetPlan Modal -->
+            <div class="modal fade" id="getplanModal" tabindex="-1" aria-labelledby="paymentModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="paymentModalLabel">Enter your MobiComm Number</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <input type="text" class="form-control mb-3" placeholder="Enter Mobile Number">
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <a href="payments.html"><button type="button" class="btn btn-success">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

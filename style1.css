@@ -1,0 +1,101 @@
+:root {
+    --bs-primary: #607D8B;
+    --bs-secondary:  #990012;
+    --bs-warning: #B3E5FC;
+    --bs-light: #F8F9FA;
+    --bs-dark: #E3F2FD;
+    --bs-danger:#64B5F6;
+    --bs-info : #FFF9C4;
+    --bs-success : #06d6a0;
+
+}
+
+.primary
+{
+    color: var(--bs-primary) !important;
+}
+.secondary
+{
+    color: var(--bs-secondary) !important;
+}
+.warning
+{
+    color: var(--bs-warning) !important;
+}
+.light
+{
+    color: var(--bs-light) !important;
+}
+.dark
+{
+    color: var(--bs-dark) !important;
+}
+.danger
+{
+    color: var(--bs-danger) !important;
+}
+.info
+{
+    color: var(--bs-info) !important;
+}
+ul li a:hover
+{
+    transform: scale(1.05);
+    transition: .3s;
+    color: black !important;
+
+}
+.navbar{
+    background-color: var(--bs-warning) !important;
+}
+.nav-link{
+    color: var(--bs-primary) !important;
+}
+
+.div-bg{
+    background-color: var(--bs-dark) !important;
+}
+.inner-div-bg
+{
+    background-color: var(--bs-light) !important;
+
+}
+.sub-heading
+{
+    color: var(--bs-secondary) !important;
+}
+.btn-pri {
+    background-color: var(--bs-danger) !important;
+}
+.btn-pri:hover{
+    color: white;
+}
+.btn-sec {
+    background-color: var(--bs-success) !important;
+}
+.btn-success:hover{
+    color: green;
+    background-color: white;
+}
+body{
+    color: var(--bs-primary) !important;
+    background-color: var(--bs-light) !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-item img {
+    height: 703px; 
+    object-fit: cover; 
+}
+
+.toggle {
+    /* Default button color */
+    background-color: #f0f0f0; /* Light background */
+    color: #333; /* Text color */
+    border: 1px solid #ccc;
+}
+
+.toggle:hover {
+    /* Hover effect */
+    background-color: #e0e0e0;
+}

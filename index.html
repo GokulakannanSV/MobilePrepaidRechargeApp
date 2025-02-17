@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobicomm</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html"><i>MobiComm</i></a>
+
+                <!-- Toggle button for responsive collapse -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Instant Recharge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#explore-offers">Explore Offers</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-primary" href="prepaidplans.html">Prepaid Plans</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+        <section>
+            <div class="container-fluid bg-dark div-bg" id="instant-recharge">
+                <div class="row p-5">
+                    <div class="col-lg-6 col-md-12">
+                        <p class="display-5 mt-5 ">Explore plans with unlimited voice calls, data, SMS, and a host of
+                            benefits.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mt-sm-4 p-lg-5 p-sm-0 rounded-5 mt-lg-5 sub-heading inner-div-bg">
+                        <h1 class="h3 mx-5 mt-4">Mobile Number</h1>
+                        <input type="text" id="mobileNumber" class="form-control mx-lg-5 mx-md-0 mt-4 w-lg-75 w-sm-100 p-lg-3 mb-4"
+                            placeholder="+91  Enter Mobile-Number">
+                            <span id="error-mobilenumber"></span>
+                        <div class="text-center">
+                            <a href="prepaidplans.html"><button type="button" class="p-2  text-center btn btn-pri mb-sm-4 mb-lg-0" onclick="validateMobileNumber()">Recharge
+                                    Now</button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 text-center mt-5  w-100 display-2 sub-heading">
+                        1 Million + Trusted
+                        Customers
+                    </div>
+                    <section>
+                        <div class="container-fluid  primary py-5" id="success-factors">
+                            <div class="row text-center">
+                                <!-- Column 1 -->
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <i class="fas fa-thumbs-up fa-3x text-primary mb-3"></i>
+                                    <h4>Happy Customers</h4>
+                                </div>
+                                <!-- Column 2 -->
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <i class="fas fa-clock fa-3x text-warning mb-3"></i>
+                                    <h4>Instant Recharge</h4>
+                                </div>
+                                <!-- Column 3 -->
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
+                                    <h4>Secure Payments</h4>
+                                </div>
+                                <!-- Column 4 -->
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <i class="fas fa-check-circle fa-3x text-info mb-3"></i>
+                                    <h4>Reliable Service</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--Carousel-->
+
+        <section id="explore-offers">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <!--Image 1-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Assests/Images/netflix.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block text-center">
+                            <h1 class="h5 text-danger">Available Netflix Exclusive Plans</h5>
+                                <p>These are the plans which are dedicated for our Netflix Lovers..</p>
+                                <a href="prepaidplans.html">
+                                    <button class="btn btn-pri" data-bs-toggle="modal" data-bs-target="#exampleModal">Recharge
+                                        Now</button>
+                                </a>
+                        </div>
+                    </div>
+                    <!--Image 2-->
+                    <div class="carousel-item">
+                        <img src="./Assests/Images/PRIME1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block text-center">
+                            <h1 class="h5 text-primary">Available Amazon prime Exclusive Plans</h5>
+                                <p>These are the plans which are dedicated for our Prime Users..</p>
+                                <a href="prepaidplans.html">
+                                    <button class="btn btn-pri" data-bs-toggle="modal" data-bs-target="#exampleModal">Recharge
+                                        Now</button>
+                                </a>
+                        </div>
+                    </div>
+                    <!--Image 3-->
+                    <div class="carousel-item">
+                        <img src="./Assests/Images/gaming1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block text-center">
+                            <h1 class="h5 text-danger">Available Gamers Exclusive data packs</h1>
+                            <p>Dedicated Plans For Our HardCore Gamers...</p>
+                            <a href="prepaidplans.html">
+                                <button class="btn btn-pri" data-bs-toggle="modal" data-bs-target="#exampleModal">Recharge
+                                    Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="testimonials" class="container-fluid mt-5 py-5 div-bg h-auto">
+            <h2 class="text-center mb-4">What Our Customers Say</h2>
+
+            <!-- Carousel for testimonials -->
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First Carousel Item -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Testimonial Card 1 -->
+                            <div class="col-md-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Gokulakannan Sv</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Seamless Recharge Experience!</h6>
+                                        <p class="card-text flex-grow-1">I’ve been using this service for months now,
+                                            and it has never failed me. Super quick recharge process with amazing
+                                            offers! Highly recommended.</p>
+                                        <footer class="blockquote-footer">7 days ago</footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Card 2 -->
+                            <div class="col-md-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Monk</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Best Plans with OTT Benefits!!</h6>
+                                        <p class="card-text flex-grow-1">I love the entertainment plans! Got a Netflix
+                                            subscription included with my recharge, and it’s a great value for money.
+                                            Smooth activation process too.</p>
+                                        <footer class="blockquote-footer">14 days ago</footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Card 3 -->
+                            <div class="col-md-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Dhanush</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Reliable Network & Speedy Data!</h6>
+                                        <p class="card-text flex-grow-1">The data speed is fantastic! Even during peak
+                                            hours, I get uninterrupted browsing and streaming. The unlimited plans are a
+                                            lifesaver!</p>
+                                        <footer class="blockquote-footer">5 days ago</footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Carousel Item -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Testimonial Card 4 -->
+                            <div class="col-md-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Varun</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Hassle-Free Auto Recharge!</h6>
+                                        <p class="card-text flex-grow-1">I set up auto-recharge, and it works perfectly!
+                                            No more worrying about my plan expiring. Love the convenience.</p>
+                                        <footer class="blockquote-footer">12 days ago</footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Card 5 -->
+                            <div class="col-md-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Gobi Krishna</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Best Budget Plans for Students!</h6>
+                                        <p class="card-text flex-grow-1">As a student, I needed an affordable yet
+                                            effective plan. The budget plans here are great, offering enough data and
+                                            validity for my needs.</p>
+                                        <footer class="blockquote-footer">3 days ago</footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Card 6 -->
+                            <div class="col-md-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Kamal Raj</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Quick Refund Process!!</h6>
+                                        <p class="card-text flex-grow-1">Had an issue with a failed recharge, but the
+                                            refund was processed within 24 hours. The support team is super helpful and
+                                            responsive!</p>
+                                        <footer class="blockquote-footer">5 days ago</footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer class="shadow-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3" data-aos="fade-right">
+                    <h5 class="primary">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html" class="text-decoration-none primary">Home</a></li>
+                        <li><a href="./prepaidplans.html" class="text-decoration-none primary">Recharge</a></li>
+                        <li><a href="./Contactus.html" class="text-decoration-none primary">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <h5 class="primary">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope me-2"></i>mobicommsupport@gmail.com</li>
+                        <li><i class="bi bi-telephone me-2"></i>0427-123-4567</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>123 Street Kiot</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-left">
+                    <h5 class="primary">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="primary fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="primary fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="primary fs-4"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small>&copy; 2024 Mobicomm Recharge Portal. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

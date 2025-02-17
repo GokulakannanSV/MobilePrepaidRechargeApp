@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="container my-auto">
+        <h2 class="mt-5 text-center">Select Payment Method</h2>
+        <span class="secondary fw-bold text-center h3">Total Payable Amount: ₹299</span>
+        <div class="accordion w-100 mx-auto" id="paymentAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#upiModalCollapse">
+                        <i class="bi bi-phone me-2"></i>UPI Payment
+                    </button>
+                </h2>
+                <div id="upiModalCollapse" class="accordion-collapse collapse show"
+                    data-bs-parent="#paymentMethodModalAccordion">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label class="form-label">UPI ID</label>
+                            <input type="text" class="form-control" placeholder="Enter your UPI ID">
+                        </div>
+
+                        <a href="paymentSummary.html"><button class="btn btn-payment">Pay Now</button></a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#cardCollapse">
+                        <i class="bi bi-credit-card me-2"></i>Credit/Debit Card
+                    </button>
+                </h2>
+                <div id="cardCollapse" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label class="form-label">Card Number</label>
+                            <input type="text" class="form-control" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Expiry Date</label>
+                                <input type="text" class="form-control" placeholder="MM/YY">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">CVV</label>
+                                <input type="password" class="form-control" placeholder="***">
+                            </div>
+                        </div>
+                        <a href="paymentSummary.html"><button class="btn btn-payment">Pay Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#netbankingCollapse">
+                        <i class="bi bi-bank me-2"></i>Net Banking
+                    </button>
+                </h2>
+                <div id="netbankingCollapse" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label class="form-label">Select Bank</label>
+                            <select class="form-select">
+                                <option value="">Choose your bank</option>
+                                <option value="sbi">State Bank of India</option>
+                                <option value="hdfc">HDFC Bank</option>
+                                <option value="icici">ICICI Bank</option>
+                            </select>
+                        </div>
+                        <a href="paymentSummary.html"><button class="btn btn-payment">Pay Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#walletCollapse">
+                        <i class="bi bi-wallet2 me-2"></i>Digital Wallet
+                    </button>
+                </h2>
+                <div id="walletCollapse" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label class="form-label">Select Wallet</label>
+                            <select class="form-select">
+                                <option value="">Choose your wallet</option>
+                                <option value="paytm">Paytm</option>
+                                <option value="phonepe">PhonePe</option>
+                                <option value="gpay">Google Pay</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-payment">Pay Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+
+
+ul li a:hover
+{
+    transform: scale(1.05);
+    transition: .3s;
+
+}
+
+.carousel-item img {
+    height: 703px; 
+    object-fit: cover; 
+}
+
+#recharge-content
+{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+body{
+    color: #607D8B;
+    background-color: #F8F9FA;
+}
+
+#instant-recharge{
+    background-color: #E3F2FD;
+}
+
+#nav-bar
+{
+    background-color: #B3E5FC;
+   
+}
+#nav-bar ul li a{
+    color: #607D8B;
+
+}
+#recharge-btn
+{
+    background-color: #64B5F6;
+}
+#recharge-now
+{
+    background-color: #F8F9FA;
+}
